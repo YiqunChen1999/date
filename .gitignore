@@ -1,0 +1,10 @@
+.cache
+build
+data
+logs*
+*.pt*
+*tf_logs*
+*.egg-info*
+*__pycache__*
+*.pytest_cache*
+*.so
