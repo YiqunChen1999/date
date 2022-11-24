@@ -2,7 +2,6 @@ custom_imports = dict(
     imports=[
         'date.models.heads.date',
         'date.models.modules.conv',
-        'date.models.modules.cost',
         'date.models.modules.identity',
         'date.models.modules.assigner',
         'date.models.predictors.base_predictor',

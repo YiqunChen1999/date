@@ -15,6 +15,8 @@ Fully convolutional detectors discard the one-to-many assignment and adopt a one
 | DATE-R50-R  | 12    |37.0| 54.9 | 40.4 | 20.5| 39.8| 49.0| TBU     | TBU |
 | DATE-R50-F  | 36    |40.6| 58.9 | 44.4 | 25.6| 44.1| 50.9| TBU     | TBU |
 | DATE-R101-F | 36    |42.2| 60.6 | 46.3 | 26.6| 45.8| 54.1| TBU     | TBU |
+| DATE-R50-F-3DMF| 12 |38.9| 57.1 | 42.9 | 22.5| 42.1| 51.3| TBU     | TBU |
+| DATE-R50-F-3DMF| 36 |42.0| 60.3 | 46.2 | 27.3| 45.5| 53.0| TBU     | TBU |
 
 ### Performance on CrowdHuman
 
@@ -29,7 +31,7 @@ Our project is based on [Pytorch](https://pytorch.org/) and [mmdetection](https:
 
 Quick install:
 ```bash
-git clone https://github.com/yiqunchen1999/date.git && cd date && bash ./install.sh
+git clone https://github.com/yiqunchen1999/date.git && cd date && bash -i ./install.sh
 ```
 
 ## Dataset
