@@ -12,7 +12,6 @@ model = dict(
             dict(
                 type='OneToOneHeadPredictor',
                 deformable=False,
-                stop_grad=False,
                 loss_cls=dict(
                     type='FocalLoss',
                     use_sigmoid=True,
@@ -39,7 +38,6 @@ model = dict(
             dict(
                 type='RetinaHeadPredictor',
                 deformable=False,
-                stop_grad=False,
                 anchor_generator=dict(
                     type='AnchorGenerator',
                     octave_base_scale=4,

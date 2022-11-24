@@ -13,7 +13,6 @@ model = dict(
             dict(
                 type='OneToOneHeadPredictor',
                 deformable=False,
-                stop_grad=False,
                 loss_cls=dict(
                     type='FocalLoss',
                     use_sigmoid=True,
@@ -43,7 +42,6 @@ model = dict(
                 center_sample_radius=1.5,
                 centerness_on_reg=False,
                 deformable=False,
-                stop_grad=False,
                 loss_cls=dict(
                     type='FocalLoss',
                     use_sigmoid=True,
