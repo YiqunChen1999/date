@@ -18,6 +18,8 @@ Fully convolutional detectors discard the one-to-many assignment and adopt a one
 | DATE-R50-F-3DMF| 12 |38.9| 57.1 | 42.9 | 22.5| 42.1| 51.3| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EVAXXEcwhpdMghEzhaQTaqsBYqKfcRdnadPuM4xZiAqiWw?e=C7EokO) |
 | DATE-R50-F-3DMF| 36 |42.0| 60.3 | 46.2 | 27.3| 45.5| 53.0| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/Ef-J9gQPR3ZOn0UMoci5m2kBHo9S0H-5aM6jNzqj4bWhDw?e=PT18i7) |
 
+**NOTE:** The provided weights of DATE-R50-F produce slightly better results than that reported.
+
 ### Performance on CrowdHuman
 
 | Model       | iters | AP50 $\uparrow$ | mMR $\downarrow$  | Recall $\uparrow$ | Download |
@@ -27,7 +29,7 @@ Fully convolutional detectors discard the one-to-many assignment and adopt a one
 
 ## Installation
 
-Our project is based on [Pytorch](https://pytorch.org/) and [mmdetection](https://github.com/open-mmlab/mmdetection/). Code is tested under Python=3.10, Pytorch>=1.12.0, mmdetection>=2.25.1.
+Our project is based on [Pytorch](https://pytorch.org/) and [mmdetection](https://github.com/open-mmlab/mmdetection/). Code is tested under Python==3.10, Pytorch>=1.12.0, mmdetection==2.25. Other versions might also work.
 
 Quick install:
 ```bash
@@ -63,7 +65,7 @@ Please follow the [tutorial of mmdetection](https://mmdetection.readthedocs.io/e
 ### CrowdHuman
 
 1. Download [CrowdHuman](https://www.crowdhuman.org/) to your machine;
-2. Unzip and link the folder in where CrowdHuman stored to `date/data/`, i.e., 
+2. Unzip and link the folder where CrowdHuman is stored to `date/data/`, i.e., 
 ```
 date
     |_ configs
@@ -76,21 +78,31 @@ date
             |_ annotation_val.odgt
             |_ ...
 ```
-3. Run dataset converter to convert the format to COCO format:
+3. Run dataset converter to convert the format:
 ```bash
 python tools/dataset_converters/crowdhuman.py
 ```
 
-## Training
+## Training and Evaluation
+
+Here are simple examples to train and evaluate DATE-R50-F. More details can be found in the [tutorial of mmdetection](https://mmdetection.readthedocs.io/en/stable/1_exist_data_model.html#).
 
 To train DATE in a machine with 8 GPUs, e.g., DATE-F-R50, please run:
 ```bash
 ./tools/dist_train.sh configs/date/date_r50_12e_8x2_fcos_poto_coco.py 8
 ```
 
+Evaluation with 8 GPUs:
+```bash
+bash ./tools/dist_test.sh \
+    configs/date/date_r50_12e_8x2_fcos_poto_coco.py \
+    work_dirs/date_r50_12e_8x2_fcos_poto_coco/latest.pth 8 \
+    --eval bbox
+```
+
 **NOTE:** We don't promise the code will produce the same numbers due to the randomness.
 
-## Acknowledge
+## Acknowledgement
 
 We want to thank the code of [OneNet](https://github.com/PeizeSun/OneNet) and [DeFCN](https://github.com/Megvii-BaseDetection/DeFCN). 
 
