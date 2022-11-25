@@ -1,10 +1,4 @@
-_base_ = [
-    '../_base_/datasets/coco_det_1x.py',
-    '../_base_/schedules/adamw_1x.py',
-    '../_base_/default_runtime.py',
-    '../_base_/custom_imports.py',
-    './e2edet_retina.py',
-]
+_base_ = './date_r50_12e_8x2.py'
 
 model = dict(
     bbox_head=dict(

@@ -9,21 +9,21 @@ Fully convolutional detectors discard the one-to-many assignment and adopt a one
 
 ### Performance on COCO
 
-| Model       | epoch | AP | AP50 | AP75 | APs | APm | APl | Weights | Log |
-| ----------- | ----- | -- | ---- | ---- | --- | --- | --- | ------- | --- |
-| DATE-R50-F  | 12    |37.3| 55.3 | 40.7 | 21.2| 40.3| 48.8| TBU     | TBU |
-| DATE-R50-R  | 12    |37.0| 54.9 | 40.4 | 20.5| 39.8| 49.0| TBU     | TBU |
-| DATE-R50-F  | 36    |40.6| 58.9 | 44.4 | 25.6| 44.1| 50.9| TBU     | TBU |
-| DATE-R101-F | 36    |42.2| 60.6 | 46.3 | 26.6| 45.8| 54.1| TBU     | TBU |
-| DATE-R50-F-3DMF| 12 |38.9| 57.1 | 42.9 | 22.5| 42.1| 51.3| TBU     | TBU |
-| DATE-R50-F-3DMF| 36 |42.0| 60.3 | 46.2 | 27.3| 45.5| 53.0| TBU     | TBU |
+| Model       | epoch | AP | AP50 | AP75 | APs | APm | APl | Download |
+| ----------- | ----- | -- | ---- | ---- | --- | --- | --- | ---------- |
+| DATE-R50-F  | 12    |37.3| 55.3 | 40.7 | 21.2| 40.3| 48.8| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EZ3CzL3SVgtEkccSjsz0-CcBUbZasnvOXRYKnCMu6qfRYA?e=vPzh0n) |
+| DATE-R50-R  | 12    |37.0| 54.9 | 40.4 | 20.5| 39.8| 49.0| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EQiJyIZ5m4tCjgz_ORscvxQBX5PAvAWds0UdZxNk-zCDJQ?e=ax9Ty1) |
+| DATE-R50-F  | 36    |40.6| 58.9 | 44.4 | 25.6| 44.1| 50.9| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EfpK-HGolPBCv9Zv0j0739gB5ifDEViNJ4HBZTlu7-6a9w?e=mTfdzm) |
+| DATE-R101-F | 36    |42.2| 60.6 | 46.3 | 26.6| 45.8| 54.1| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EVDHUZemYPhOkcdkXvJD67cBtHdnO0941t4_h5M9OGUcjw?e=Clpo0e) |
+| DATE-R50-F-3DMF| 12 |38.9| 57.1 | 42.9 | 22.5| 42.1| 51.3| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EVAXXEcwhpdMghEzhaQTaqsBYqKfcRdnadPuM4xZiAqiWw?e=C7EokO) |
+| DATE-R50-F-3DMF| 36 |42.0| 60.3 | 46.2 | 27.3| 45.5| 53.0| [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/Ef-J9gQPR3ZOn0UMoci5m2kBHo9S0H-5aM6jNzqj4bWhDw?e=PT18i7) |
 
 ### Performance on CrowdHuman
 
-| Model       | iters | AP50 $\uparrow$ | mMR $\downarrow$  | Recall $\uparrow$ | Weights | Log |
-| ----------- | ----- | ---- | ---- | ------ | ------- | --- |
-| DATE-R50-F  | 30k   | 90.5 | 49.0 | 97.9   | TBU     | TBU |
-| DATE-R50-R  | 30k   | 90.6 | 48.4 | 97.9   | TBU     | TBU |
+| Model       | iters | AP50 $\uparrow$ | mMR $\downarrow$  | Recall $\uparrow$ | Download |
+| ----------- | ----- | ---- | ---- | ------ | ---------- |
+| DATE-R50-F  | 30k   | 90.5 | 49.0 | 97.9   | [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EUZdioib2OVAg4TlSlMcDOABrMaP5r6ndA-O4zYrVPZt1Q?e=ig4nbW) |
+| DATE-R50-R  | 30k   | 90.6 | 48.4 | 97.9   | [Weights](https://mailsdueducn-my.sharepoint.com/:u:/g/personal/201700181055_mail_sdu_edu_cn/EV7Nxs5KuX1Cr24GshiqJtkB1pmTf3MTbLx5PkVBBtTHvQ?e=ak1EJ6) |
 
 ## Installation
 
