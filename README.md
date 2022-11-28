@@ -1,6 +1,8 @@
 
 # DATE: Dual Assignment for End-to-End Fully Convolutional Object Detection
 
+Code of our paper [DATE: Dual Assignment for End-to-End Fully Convolutional Object Detection](https://arxiv.org/abs/2211.13859).
+
 ![Core](./asserts/Core.png) ![Architecture](./asserts/Arch.png)
 
 Fully convolutional detectors discard the one-to-many assignment and adopt a one-to-one assigning strategy to achieve end-to-end detection but suffer from the slow convergence issue. In this paper, we revisit these two assignment methods and find that bringing one-to-many assignment back to end-to-end fully convolutional detectors helps with model convergence. Based on this observation, we propose **D**ual **A**ssignment for end-to-end fully convolutional de**TE**ction (**DATE**). Our method constructs two branches with one-to-many and one-to-one assignment during training and speeds up the convergence of the one-to-one assignment branch by providing more supervision signals. DATE only uses the branch with the one-to-one matching strategy for model inference, which doesn't bring inference overhead. 
@@ -101,6 +103,21 @@ bash ./tools/dist_test.sh \
 ```
 
 **NOTE:** We don't promise the code will produce the same numbers due to the randomness.
+
+## Citing DATE
+
+If you find this work helpful, please consider citing our paper:
+
+```
+@misc{chen2022date,
+      title={DATE: Dual Assignment for End-to-End Fully Convolutional Object Detection}, 
+      author={Yiqun Chen and Qiang Chen and Qinghao Hu and Jian Cheng},
+      year={2022},
+      eprint={2211.13859},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 
 ## Acknowledgement
 
