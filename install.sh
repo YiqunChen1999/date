@@ -5,8 +5,8 @@ conda create -n date python=3.10 -y \
 && conda install -c "nvidia/label/cuda-11.7.0" cuda-nvcc -y \
 && conda install pytorch torchvision pytorch-cuda=11.7 -c pytorch -c nvidia -y \
 && pip install -U openmim \
-&& mim install 'mmcv-full>=1.7.0' \
-&& pip install 'mmdet>=2.25.1';
+&& mim install 'mmcv-full==1.7.0' \
+&& pip install 'mmdet==2.25.1';
 
 if [ $? ]
 then
